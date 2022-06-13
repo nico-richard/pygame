@@ -23,7 +23,7 @@ class Square(pygame.sprite.Sprite):
         self.color = INITIAL_SQUARE_COLOR
         self.name = ''.join([choice(string.ascii_lowercase) for _ in range(8)])
         self.draw_rect()
-        pygame.sprite.Sprite.__init__(self)
+        super().__init__()
 
     def draw_rect(self):
         self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
