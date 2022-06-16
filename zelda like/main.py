@@ -16,6 +16,7 @@ class Game:
 
         self.clock = pygame.time.Clock()
         self.level = Level()
+        self.GREEN_BACKGROUND = (50, 90, 50)
 
     def run(self):
         while True:
@@ -24,7 +25,7 @@ class Game:
                     pygame.quit()
                     sys.exit()
 
-            self.screen.fill('Gray')
+            self.screen.fill(self.GREEN_BACKGROUND)
             self.level.run()
             pygame.display.update()
             self.clock.tick(FPS)
