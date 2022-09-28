@@ -19,16 +19,14 @@ Pygame is a set of Python modules for game creation. It includes interesting pro
 ## Getting Started
 
 
-An anonymous user can have access to the public posts.
-
-After being logged in, the user can post its own activites.
+Execute main.py
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
 
 
-In order to build a full blog-like website, several parts have to be implemented :
+Build 3 simple games :
 
 - [x] Ballistic
 - [x] Bouncing
