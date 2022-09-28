@@ -1,8 +1,8 @@
-# Game setup' ',' ',' ',' ',' ',' ',' ',' ',' '
-SCREEN_WIDTH = 1280
-SCREEN_HEIGHT = 720
+# Game setup
+TILESIZE = 32
+SCREEN_WIDTH = 30 * TILESIZE
+SCREEN_HEIGHT = 20 * TILESIZE
 FPS = 60
-TILESIZE = 64
 
 GAME_MAP = [
     ['x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x'],

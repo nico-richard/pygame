@@ -5,15 +5,16 @@ from debug import debug
 
 
 class Player(Sprite):
-    def __init__(self, pos, groups, obstacle_sprites):
+    def __init__(self, pos, groups, obstacle_sprites, sprite_type='player'):
         super().__init__(groups)
-        self.image = pygame.image.load('zelda like/files/adventurer2.png').convert_alpha()
+        self.image = pygame.image.load('zelda like/graphics/adventurer2.png').convert_alpha()
         self.image.set_colorkey((255, 255, 255))
         self.rect = self.image.get_rect(topleft=pos)
         self.hitbox = self.rect.inflate(0, -20)
         self.direction = pygame.math.Vector2()
         self.speed = 5
         self.obstacle_sprites = obstacle_sprites
+        self.sprite_type = sprite_type
 
     def input(self):
         keys = pygame.key.get_pressed()
